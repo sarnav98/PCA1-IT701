@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <form id="registration">
+      <center>
+        <center><img src="/icon.png" /></center>
+        <h1>Employee Registration Form</h1>
+      </center>
+      <center>
+        <br />
+        <input type="radio" value="Male" name="gender" checked /> Mr.
+        <input type="radio" value="Female" name="gender" /> Mrs.
+        <input type="radio" value="Other" name="gender" /> Ms.
+      </center>
+      <label> First Name </label>
+      <input
+        type="text"
+        name="firstname"
+        placeholder="Firstname"
+        size="15"
+        required
+      />
+      <label> Last Name </label>
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Lastname"
+        size="15"
+        required
+      />
+      <label> Mail Address1 </label>
+      <input type="text" name="address1" size="15" required />
+      <label> Mail Address2 </label>
+      <input type="text" name="address2" size="15" required />
+      <label> City </label>
+      <input type="text" name="city" size="15" required />
+      <div>
+        <label> State : </label>
+
+        <select>
+          <option value="Gujarat">Gujarat</option>
+          <option value="West Bengal">West Bengal</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Goa">Goa</option>
+          <option value="Maharashtra">Maharashtra</option>
+        </select>
+      </div>
+      <div>
+        <label> Zip Code </label>
+        <input type="text" name="zipcode" placeholder="" size="2" />
+        <label>Upload Photo</label>
+        <button
+          type="button"
+          placeholder="No File Selected"
+          onclick="alert('Hello world!')"
+        >
+          Browse
+        </button>
+      </div>
+
+      <label for="email" onload="document.form1.text1.focus()"
+        ><b>Email</b></label
+      >
+      <input type="text" placeholder="" name="email" required />
+
+      <label for="text"><b>Mobile</b></label>
+      <input type="text" placeholder="+91" name="number" required />
+      <label><b>Languages Known</b></label>
+      <input type="checkbox" id="Gujarati" name="Gujarati" value="Gujarati" />
+      <label for="vehicle1"> Gujarati</label>
+      <input type="checkbox" id="Hindi" name="Hindi" value="Hindi" />
+      <label for="vehicle2"> Hindi</label>
+      <input type="checkbox" id="English" name="English" value="English" />
+      <label for="vehicle2"> English</label>
+      <input type="checkbox" id="Marathi" name="Marathi" value="Marathi" />
+      <label for="vehicle3"> Marathi</label><br /><br />
+      <label><b>Additional Information</b></label>
+      <input
+        type="text"
+        name="optional"
+        placeholder="Optional"
+        size="15"
+        required
+      />
+      <center>
+        <button onclick="ValidateEmail(email) ; validatePhone(number)">
+          submit
+        </button>
+        <button onclick="myFunction()">reset</button>
+      </center>
+      <script src="/script.js" async defer></script>
+    </form>
+  </body>
+</html>
